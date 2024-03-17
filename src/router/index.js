@@ -19,7 +19,8 @@ props: true // Truyền các biến trong $route.params vào làm props
 },
 ];
 const router = createRouter({
-history: createWebHistory(import.meta.env.BASE_URL),
+// import.meta.env.BASE_URL
+history: createWebHistory("/"),
 routes,
 });
 export default router;
